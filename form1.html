@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg,#1e3c72,#2a5298);
+    }
+
+    .container {
+      max-width: 450px;
+      margin: 60px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #1e3c72;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 30px;
+      padding: 14px;
+      background: #27ae60;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #219150;
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 25px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Student Registration</h2>
+
+    <form action="https://formspree.io/f/xdallddz" method="POST">
+
+      <label>First Name</label>
+      <input type="text" name="first_name" required>
+
+      <label>Last Name</label>
+      <input type="text" name="last_name" required>
+
+      <label>Mobile Phone</label>
+      <input type="tel" name="mobile_phone" required>
+
+      <label>Telegram Username</label>
+      <input type="text" name="telegram_username" placeholder="@username" required>
+
+      <button type="submit">Submit Registration</button>
+
+    </form>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Religious Online Teaching Platform</p>
+  </footer>
+
+</body>
+</html>
